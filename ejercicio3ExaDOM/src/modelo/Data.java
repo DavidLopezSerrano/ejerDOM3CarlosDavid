@@ -27,9 +27,9 @@ public class Data {
 	}
 
 	private void createTexts() {
-		texts.add("EXAMEN DavidLopezSerrano");// 0
-		texts.add("Guardar");// 1
-		texts.add("Eliminar");// 2
+		texts.add("ProgramaDOM3");// 0
+		texts.add("Generar Caja Texto");// 1
+		texts.add("Ocultar");// 2
 		texts.add("Visualizar");// 3
 		texts.add("Info Cliente");// 4
 		texts.add("Nombre");// 5
