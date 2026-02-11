@@ -4,6 +4,6 @@ public class MainView {
 
 	private void syso() {
 		// TODO Auto-generated method stub
-		System.out.println("nigga");
+		System.out.println("niggaa");
 	}
 }
