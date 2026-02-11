@@ -1,0 +1,66 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Data {
+
+	
+	private ArrayList<String> texts = new ArrayList<>();
+	private ArrayList<Integer> numbers = new ArrayList<>();
+	
+	
+	
+	
+	public Data() {
+
+		createTexts();
+		createNumbers();
+
+	}
+	
+	
+	private void createNumbers() {
+		numbers.add(3);// 0 - Numero de botones
+		numbers.add(5);// 1 - Numero de labels info clientes
+		numbers.add(5); // 2 - Numero clientes
+
+	}
+
+	private void createTexts() {
+		texts.add("EXAMEN DavidLopezSerrano");// 0
+		texts.add("Guardar");// 1
+		texts.add("Eliminar");// 2
+		texts.add("Visualizar");// 3
+		texts.add("Info Cliente");// 4
+		texts.add("Nombre");// 5
+		texts.add("Cargo");// 6
+		texts.add("Salario");// 7
+		texts.add("Marca");// 8
+		texts.add("Color");// 9
+		texts.add("Borrar usuario : ");// 10
+		texts.add("Borrar");// 11
+	}
+
+
+	public ArrayList<String> getTexts() {
+		return texts;
+	}
+
+
+	public void setTexts(ArrayList<String> texts) {
+		this.texts = texts;
+	}
+
+
+	public ArrayList<Integer> getNumbers() {
+		return numbers;
+	}
+
+
+	public void setNumbers(ArrayList<Integer> numbers) {
+		this.numbers = numbers;
+	}
+	
+	
+	
+}
