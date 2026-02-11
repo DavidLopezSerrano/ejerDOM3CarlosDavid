@@ -105,7 +105,8 @@ public class MainView extends JFrame {
 
 	public void hideShow(Data data) {
 
-		System.out.println("caca");
+		textField.get(0).setText("");
+	
 	}
 
 }
