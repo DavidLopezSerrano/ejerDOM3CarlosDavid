@@ -104,7 +104,7 @@ public class MainView extends JFrame {
 
 		boolean visible = textField.get(0).isVisible();
 		textField.get(0).setVisible(!visible);
-		
+		System.out.println(0);
 	
 	}
 
