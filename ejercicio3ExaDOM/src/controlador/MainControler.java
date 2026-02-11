@@ -15,9 +15,7 @@ public class MainControler {
 	
 	Listener listener = new Listener(data, mainView);
 	
-	mainView.getButtons().get(0).addActionListener(listener);
-	
-	mainView.getButtons().get(1).addActionListener(listener);
-	
+	for (int i = 0; i < 2; i++)
+		mainView.getButtons().get(i).addActionListener(listener);
 	}
 }

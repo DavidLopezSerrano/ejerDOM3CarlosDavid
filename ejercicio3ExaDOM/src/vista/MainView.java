@@ -29,7 +29,6 @@ public class MainView extends JFrame {
 		createButtons(data);
 		generateTextField(data);
 		panels.get(1).setVisible(false);
-
 		pack();
 	}
 
@@ -78,6 +77,7 @@ public class MainView extends JFrame {
 
 	public void generateTextField(Data data) {
 		
+		
 		panels.add(new JPanel());
 
 		textField.add(new JTextField(10));
@@ -90,7 +90,6 @@ public class MainView extends JFrame {
 
 		this.add(panels.get(1));
 
-		pack();
 		pack();
 
 	}
@@ -106,8 +105,16 @@ public class MainView extends JFrame {
 
 	public void hideShow(Data data) {
 
-		textField.get(0).setVisible(false);
-	
+	    boolean visible = true;
+
+            if (visible) {
+            	textField.get(0).setVisible(false);
+                buttons.get(1).setText("Mostrar");
+            } else {
+            	textField.get(0).setVisible(true);
+            	buttons.get(1).setText("Ocultar");
+            }
+        
 	}
 
 }
