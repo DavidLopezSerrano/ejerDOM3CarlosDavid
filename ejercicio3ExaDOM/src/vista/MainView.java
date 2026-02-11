@@ -91,6 +91,7 @@ public class MainView extends JFrame {
 		this.add(panels.get(1));
 
 		pack();
+		pack();
 
 	}
 
