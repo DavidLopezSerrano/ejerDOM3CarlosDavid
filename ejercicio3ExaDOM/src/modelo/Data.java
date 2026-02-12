@@ -34,14 +34,14 @@ public class Data {
 		texts.add("Generar Caja Texto");// 1
 		texts.add("Ocultar");// 2
 		texts.add("Visualizar");// 3
-		texts.add("Info Cliente");// 4
-		texts.add("Nombre");// 5
-		texts.add("Cargo");// 6
-		texts.add("Salario");// 7
-		texts.add("Marca");// 8
-		texts.add("Color");// 9
-		texts.add("Borrar usuario : ");// 10
-		texts.add("Borrar");// 11
+//		texts.add("Info Cliente");// 4
+//		texts.add("Nombre");// 5
+//		texts.add("Cargo");// 6
+//		texts.add("Salario");// 7
+//		texts.add("Marca");// 8
+//		texts.add("Color");// 9
+//		texts.add("Borrar usuario : ");// 10
+//		texts.add("Borrar");// 11
 	}
 
 	// Getters & Setters
