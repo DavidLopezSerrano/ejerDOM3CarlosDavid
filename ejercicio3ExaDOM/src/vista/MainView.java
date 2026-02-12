@@ -41,6 +41,9 @@ public class MainView extends JFrame {
 		pack();
 	}
 
+	/*
+	 * Getters y setters
+	 */
 	public ArrayList<JButton> getButtons() {
 		return buttons;
 	}
