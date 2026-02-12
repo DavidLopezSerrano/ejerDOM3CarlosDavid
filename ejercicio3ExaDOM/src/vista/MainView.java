@@ -18,10 +18,10 @@ import modelo.Data;
 
 public class MainView extends JFrame {
 
-	/* 
-	 * Definicion de las variables de la clase MainView con arraylist cuando se 
-	 * usa la misma variable mas de una vez 
-	 */ 
+	/*
+	 * Definicion de las variables de la clase MainView con arraylist cuando se usa
+	 * la misma variable mas de una vez
+	 */
 	private ArrayList<JButton> buttons = new ArrayList<>();
 
 	private ArrayList<JLabel> labels = new ArrayList<>();
@@ -48,6 +48,7 @@ public class MainView extends JFrame {
 	public void setButtons(ArrayList<JButton> buttons) {
 		this.buttons = buttons;
 	}
+	
 
 	public ArrayList<JLabel> getLabels() {
 		return labels;
@@ -72,7 +73,7 @@ public class MainView extends JFrame {
 	public void setPanels(ArrayList<JPanel> panels) {
 		this.panels = panels;
 	}
-	
+
 	// Metodo que genera el campo de texto con el boton para mostrar y ocultar
 	public void generateTextField(Data data) {
 
@@ -97,7 +98,7 @@ public class MainView extends JFrame {
 
 		boolean visible = textField.get(0).isVisible();
 		textField.get(0).setVisible(!visible);
-	
+
 	}
 
 	// Metodo para crear botones y añadilos al panel

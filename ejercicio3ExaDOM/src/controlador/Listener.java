@@ -41,6 +41,7 @@ public class Listener implements ActionListener {
 			mainView.hideShow(data);
 
 		}
+		
 
 	}
 

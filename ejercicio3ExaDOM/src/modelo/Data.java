@@ -17,6 +17,7 @@ public class Data {
 
 		createTexts();
 		createNumbers();
+		
 
 	}
 

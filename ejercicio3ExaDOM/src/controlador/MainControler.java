@@ -20,6 +20,7 @@ public class MainControler {
 	
 	Listener listener = new Listener(data, mainView);
 	//Agregamos el listner a los dos botones
+	
 	for (int i = 0; i < 2; i++)
 		mainView.getButtons().get(i).addActionListener(listener);
 	}
