@@ -8,22 +8,19 @@ package modelo;
 import java.util.ArrayList;
 
 public class Data {
-
-	
+	// Atributos
 	private ArrayList<String> texts = new ArrayList<>();
 	private ArrayList<Integer> numbers = new ArrayList<>();
-	
-	
-	
-	
+
+	// Constructor de data
 	public Data() {
 
 		createTexts();
 		createNumbers();
 
 	}
-	
-	
+
+	// Metodos
 	private void createNumbers() {
 		numbers.add(3);// 0 - Numero de botones
 		numbers.add(5);// 1 - Numero de labels info clientes
@@ -46,26 +43,21 @@ public class Data {
 		texts.add("Borrar");// 11
 	}
 
-
+	// Getters & Setters
 	public ArrayList<String> getTexts() {
 		return texts;
 	}
-
 
 	public void setTexts(ArrayList<String> texts) {
 		this.texts = texts;
 	}
 
-
 	public ArrayList<Integer> getNumbers() {
 		return numbers;
 	}
 
-
 	public void setNumbers(ArrayList<Integer> numbers) {
 		this.numbers = numbers;
 	}
-	
-	
-	
+
 }

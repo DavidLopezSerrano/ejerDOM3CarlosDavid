@@ -10,16 +10,16 @@ import vista.MainView;
 
 public class MainControler {
 
-	
+	//Clase controlador
 	public MainControler() {
 		
-	
+	//Instanciamos el resto de clases
 	Data data = new Data();
 	
 	MainView mainView = new MainView(data);
 	
 	Listener listener = new Listener(data, mainView);
-	
+	//Agregamos el listner a los dos botones
 	for (int i = 0; i < 2; i++)
 		mainView.getButtons().get(i).addActionListener(listener);
 	}

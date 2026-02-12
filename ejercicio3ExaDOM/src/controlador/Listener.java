@@ -7,27 +7,27 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-
 import modelo.Data;
 import vista.MainView;
 
 public class Listener implements ActionListener {
-
+//Atributos
 	private MainView mainView;
 
 	private Data data;
 
+	// Constructor
 	public Listener(Data data, MainView mainView) {
 		this.data = data;
 		this.mainView = mainView;
 
 	}
 
+	// Metodo actionperfodmed
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		// Si pulsa el boton 0, vuelve invisible el panel principal, visible el
+		// secundario y genera la textbox
 		if (e.getSource() == mainView.getButtons().get(0)) {
 
 			mainView.generateTextField(data);
@@ -35,11 +35,11 @@ public class Listener implements ActionListener {
 			mainView.getPanels().get(1).setVisible(true);
 
 		}
-		
-		else if(e.getSource() == mainView.getButtons().get(1)) {
-			
+		// Si se pulsa el boton 1, se oculta o muestra la textbox
+		else if (e.getSource() == mainView.getButtons().get(1)) {
+
 			mainView.hideShow(data);
-			
+
 		}
 
 	}
