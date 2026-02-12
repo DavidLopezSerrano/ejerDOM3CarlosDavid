@@ -18,6 +18,10 @@ import modelo.Data;
 
 public class MainView extends JFrame {
 
+	/* 
+	 * Definicion de las variables de la clase MainView con arraylist cuando se 
+	 * usa la misma variable mas de una vez 
+	 */ 
 	private ArrayList<JButton> buttons = new ArrayList<>();
 
 	private ArrayList<JLabel> labels = new ArrayList<>();
@@ -26,6 +30,7 @@ public class MainView extends JFrame {
 
 	private ArrayList<JPanel> panels = new ArrayList<>();
 
+	// Creamos el constructor y llamamos a los metodos necesarios
 	public MainView(Data data) {
 
 		super(data.getTexts().get(0));
@@ -34,25 +39,6 @@ public class MainView extends JFrame {
 		generateTextField(data);
 		panels.get(1).setVisible(false);
 		pack();
-	}
-
-	private void createButtons(Data data) {
-
-		panels.add(new JPanel());
-		panels.get(0).setLayout(new FlowLayout());
-
-		buttons.add(new JButton(data.getTexts().get(1)));
-		panels.get(0).add(buttons.get(0));
-
-		this.add(panels.get(0));
-
-	}
-
-	private void setProperties() {
-		setLayout(new FlowLayout());
-		setVisible(true);
-		setLocationRelativeTo(null);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 	public ArrayList<JButton> getButtons() {
@@ -79,6 +65,15 @@ public class MainView extends JFrame {
 		this.textField = textField;
 	}
 
+	public ArrayList<JPanel> getPanels() {
+		return panels;
+	}
+
+	public void setPanels(ArrayList<JPanel> panels) {
+		this.panels = panels;
+	}
+	
+	// Metodo que genera el campo de texto con el boton para mostrar y ocultar
 	public void generateTextField(Data data) {
 
 		panels.add(new JPanel());
@@ -97,19 +92,33 @@ public class MainView extends JFrame {
 
 	}
 
-	public ArrayList<JPanel> getPanels() {
-		return panels;
-	}
-
-	public void setPanels(ArrayList<JPanel> panels) {
-		this.panels = panels;
-	}
-
+	// Metodo que hace que se oculte la caja de texto o se muestre
 	public void hideShow(Data data) {
 
 		boolean visible = textField.get(0).isVisible();
 		textField.get(0).setVisible(!visible);
 	
+	}
+
+	// Metodo para crear botones y añadilos al panel
+	private void createButtons(Data data) {
+
+		panels.add(new JPanel());
+		panels.get(0).setLayout(new FlowLayout());
+
+		buttons.add(new JButton(data.getTexts().get(1)));
+		panels.get(0).add(buttons.get(0));
+
+		this.add(panels.get(0));
+
+	}
+
+	// Configuracioin de la ventana
+	private void setProperties() {
+		setLayout(new FlowLayout());
+		setVisible(true);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 }
